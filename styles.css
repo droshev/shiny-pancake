@@ -1,0 +1,48 @@
+@import "assets/fundamental-next.css";
+@import "assets/icon.css";
+
+@font-face {
+    font-family: "SAP-icons";
+    src: url('./assets/SAP-icons.woff')
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "72";
+    src: url('./assets/72-Regular-full.woff')
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "72";
+    src: url('./assets/72-Bold-full.woff')
+        format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #F5F6F7;
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 600px;
+    margin-top: 5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgb(131 150 168 / 16%), 0 8px 16px rgb(131 150 168 / 16%);
+    padding: 32px;
+    gap: 10px;
+}
+.wrapper__row {
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}

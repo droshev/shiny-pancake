@@ -1,0 +1,37 @@
+{
+  "name": "fn-ti",
+  "version": "0.0.1",
+  "description": "Fundamental Styles - FN - T&I Pages",
+  "main": "index.html",
+  "scripts": {
+    "cp-72": "cp node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff assets/72-Regular-full.woff && cp node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold-full.woff assets/72-Bold-full.woff",
+    "cp-icons": "cp temp/SAP-icons.woff assets/SAP-icons.woff",
+    "cp-fundamental": "cp node_modules/fundamental-styles/dist/icon.css assets/icon.css",
+    "cp-fn": "cp node_modules/@fundamental-styles/fn/dist/fundamental-next.css assets/fundamental-next.css",
+    "prepare": "rimraf assets && mkdir assets && npm run cp-icons && npm run cp-72 && npm run cp-fundamental && npm run cp-fn",
+    "start": "npm run prepare && live-server  --port=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droshev/shiny-pancake.git"
+  },
+  "keywords": [
+    "fiori",
+    "next",
+    "security",
+    "T&I",
+    "fundamental-styles"
+  ],
+  "author": "droshev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/droshev/shiny-pancake/issues"
+  },
+  "homepage": "https://github.com/droshev/shiny-pancake#readme",
+  "devDependencies": {
+    "@fundamental-styles/fn": "^0.21.0-rc.59",
+    "@sap-theming/theming-base-content": "^11.1.34",
+    "fundamental-styles": "^0.21.0-rc.59",
+    "live-server": "^1.2.1"
+  }
+}
